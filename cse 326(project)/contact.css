@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    border: 1px solid;
+    width: 100%;
+    height: 70%;
+}
+
+.main .container{
+    margin: 2%;
+    border: 1px solid greenyellow;
+    background: greenyellow;
+
+    height: 87%;
+}
+
+.main .container .card{
+    margin: 2%;
+    border-radius: 15px;
+    height: 74%;
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+    padding: 2%;
+    background: rgb(245, 245, 254);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.1) ;
+}
+
+.main .container .card h3{
+    margin: 2% 0;
+    font-size: 35px;
+    border-bottom: 1px solid green;
+    color: green;
+    font-weight: bolder;
+    padding-bottom: 2%;
+}
+
+.main .container .card .details{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    height: 25%;
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+
+.main .container .card .details input{
+    margin: 2%;
+    border:none;
+    padding: 0 2%;
+    border-bottom: 2px solid green;
+}
+
+.main .container .card .details1{
+    width: 80%;
+    margin-left: 10%;
+    height: 35%;
+}
+.main .container .card .details1 input{
+    width: 94%;
+    margin: 2% 0;
+    padding: 0 2%;
+    height: 80%;
+    border: none;
+    border-bottom: 2px solid green;
+    
+}
+
+.main .container .card .sub_btn1{
+    margin: 3%;
+    color: green;
+    font-size: 15px;
+    padding: 1% 4%;
+    background: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.main .container .card .sub_btn1:hover{
+    background: green;
+    color: white;
+    font-weight: bolder;
+    transition: .2s linear;
+}

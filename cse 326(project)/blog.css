@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    height: 100%;
+}
+
+body{
+    background: #eee;
+    height: 100%;
+}
+.header{
+    position: fixed;
+    height: 10%;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 7%;
+    background: rgb(51,51,51);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.1) ;
+}
+
+.header .logo{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(245, 245, 254);
+
+}
+.header .logo i{
+    color: #6ab04c;
+}
+
+.header .navbar a{
+    font-size: 20px ;
+    color: rgb(245, 245, 254);
+    margin: 0 15px;
+}
+.header .navbar a:hover{
+    font-weight: bold;
+    color: #6ab04c;
+    transition: .3s;
+}
+
+.header .icons{
+    display: flex;
+}
+
+.header .icons div{
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    border-radius:8px ;
+    background: rgb(51,51,51);
+    color: white;
+    font-size:22px ;
+    margin-right:5px ;
+    text-align: center;
+}
+
+.header .icons div a{
+    color: #eee;
+}
+
+.header .icons div:hover{
+    background: #6ab04c;
+    color: #eee;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 110%;
+    right:-100%;
+    width: 500px  ;
+    height: 45px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.1) ;
+}
+
+.header .search-form.active{
+    right: 35px;
+    transition: .4s linear;
+}
+
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size:15px;
+    color: black;
+    padding:0 8px;
+}
+
+.header .search-form label{
+    font-size: 15px;
+    padding-right: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.header .search-form label:hover{
+    color: #6ab04c;
+}
+
+
+
+.banner{
+    margin-top: 5%;
+    width: 100%;
+    height: 60%;
+    background-image: url(blog1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .content{
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    height: 100%;
+}
+.banner .content h3{
+    padding-top: 12%;
+    color: #eee;
+    font-size:60px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.blog1{
+    height: 60%;
+    background: rgb(51,51,51);
+    padding: 2%;
+    color: #eee;
+}
+
+.blog1 .container{
+    background: rgb(51,51,51);
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0px 20px 3px rgba(0,0,0,1) ;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.blog1 .container .image{
+    width: 100%;
+    height: 100%;
+    background: url(blog2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog1 .container .content{
+    padding: 2%;
+}
+
+.blog1 .container .content .blog_details{
+    font-weight: lighter;
+    font-size: 15px;
+    font-style: italic;
+    color: #6ab04c;
+    margin-top: 5%;
+}
+
+.blog1 .container .content h2{
+    font-size: 35px;
+    margin: 1% 0%;
+}
+
+.blog1 .container .content .blog_cont{
+    margin: 1% 0%;
+    font-size: 15px;
+}
+
+.blog1 .container .content .blog_admin{
+    margin: 3% 0%;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #6ab04c;
+}
+
+
+
+
+.blog2{
+    height: 60%;
+    background: rgba(245, 245, 254, 0.5);
+    padding: 2%;
+    color: rgb(51,51,51);
+}
+
+.blog2 .container{
+    background: rgba(245, 245, 254, 0.1);
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0px 20px 3px rgba(0,0,0,.5) ;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.blog2 .container .image{
+    width: 100%;
+    height: 100%;
+    background: url(blog2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog2 .container .content{
+    padding: 2%;
+}
+
+.blog2 .container .content .blog_details{
+    font-weight: lighter;
+    font-size: 15px;
+    font-style: italic;
+    color: #6ab04c;
+    margin-top: 5%;
+}
+
+.blog2 .container .content h2{
+    font-size: 35px;
+    margin: 1% 0%;
+}
+
+.blog2 .container .content .blog_cont{
+    margin: 1% 0%;
+    font-size: 15px;
+}
+
+.blog2 .container .content .blog_admin{
+    margin: 3% 0%;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #6ab04c;
+}
+
+.btn2{
+    border: 1px solid #6ab04c;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #6ab04c;
+    padding:10px 15px;
+    background: none;
+    margin-top: 20px;
+}
+
+.btn2:hover{
+    border: #6ab04c;
+    color: #eee;
+    padding:10px 15px;
+    background: #6ab04c;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+.footer{
+    background: #6ab04c;
+    height: 50%;
+    color: #eee;
+    margin-bottom: -1%;
+}
+
+
+.footer .container{
+
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 1px;
+    padding: 2%;
+}
+
+.footer .container .box{
+
+    padding:20px;
+}
+
+.footer .container .box h3{
+    font-size: 23px;
+    font-weight: bolder ;
+    text-decoration: underline white;
+    padding-bottom: 10px;
+}
+
+.footer .container .box a{
+    display: block;
+    font-size: 15px;
+    color: #eee;
+    font-weight: bold;
+}
+
+.footer .container .box a:hover{
+    color: rgb(51,51,51);
+    
+}
+
+.footer .container .box i{
+    color: white;
+}
+
+
+
+.btn1{
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #eee;
+    padding:10px 15px;
+    background: none;
+    margin-top: 20px;
+}
+
+.btn1:hover{
+    border: #6ab04c;
+    color: black;
+    padding:10px 15px;
+    background: #eee;
+    font-weight: bolder;
+}
+
+.footer .container .box .icons{
+    display: flex;
+}
+
+.footer .container .box .icons a{
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.footer .container .box .icons a:hover{
+    color: rgb(51,51,51);
+    background: #eee;
+}
+
+.footer .container .box p{
+    font-size: 15px;
+    padding: 10px 5px;
+}
+
+.footer .container .box .email{
+    border-radius: 8px;
+    height: 30px;
+    width: 60%;
+    padding-left:2% ;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    padding: 10px ;
+    border-top: 1px solid;
+    padding-top: 25px;
+}
+.footer .credit span{
+    color: rgb(51,51,51);
+    font-weight: bolder;
+}

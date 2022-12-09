@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.main{
+    height: 70%;
+    border: 1px solid;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.main .container{
+    border: 1px solid;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.main .container .rev{
+    border: 1px solid;
+    padding: 3%;
+}
+
+.main .container .rev .card{
+    border: 1px solid;
+    height: 100%;
+    padding: 3%;
+    text-align: center;
+}
+
+.main .container .rev .card .img{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.main .container .rev .card .name{
+    border: 1px solid;
+    margin: 5% 0;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+
